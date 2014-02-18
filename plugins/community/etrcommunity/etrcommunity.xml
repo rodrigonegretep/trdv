@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="community" method="upgrade">
+	<name>Etr Community Plugin</name>
+	<author>Rodrigo Negrete</author>
+	<creationDate>January 2014</creationDate>
+	<copyright>Copyright 2014 - Ideamovil</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>rodrigo@ideamovil.cl</authorEmail>
+	<authorUrl>http://www.ideamovil.cl</authorUrl>
+	<version>1.0.5</version>
+	<isapplication>true</isapplication>
+	<isbrowseable>true</isbrowseable> 
+	<description>PLG_ETRCOM_DESCRIPTION</description> 
+	<languages>
+		<language tag="es-ES">es-ES.plg_community_etrcom.ini</language>
+		<language tag="es-ES">es-ES.plg_community_etrcom.sys.ini</language>
+	</languages> 
+	<files>
+		<file plugin="etrcommunity">etrcommunity.php</file>
+		<folder>etrcommunity</folder>
+	</files>
+ 
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="coreapp" type="list" default="0" label="Core Application" description="Causes this application to not appearin the users applications list but it will allow this application to appear in the user profile automatically if selected.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="position" type="list" default="content" label="Avalaible Positions" description="Select one or more available positions from the list.  You can use Ctrl-click to select more than one item.">
+					<option value="content">Content</option>
+					<option value="sidebar-top">Sidebar Top</option>
+					<option value="sidebar-bottom">Sidebar Bottom</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="community" method="upgrade">
+	<name>Invite</name>
+	<author>AzrulStudio</author>
+	<creationDate>July 2008</creationDate>
+	<copyright>Copyright (C) 2008. All rights reserved.</copyright>
+	<license>http://www.azrul.com</license>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>www.azrul.com</authorUrl>
+	<version>1.6</version>
+	<isapplication>false</isapplication>
+	<isbrowsable>false</isbrowsable>
+	<description>
+		Invite for JomSocial © AzrulStudio 2008
+	</description>
+	<files>
+		<file plugin="invite">invite.php</file>
+	</files>
+	
+	<params>
+	</params>
+</install>

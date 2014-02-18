@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="display" type="radio" default="age" label="Display As" description="Set the display type">
+			<option value="age" name='Age'>Age</option>
+			<option value="date" name='Date'>Date</option>
+		</param>
+		<param name="readonly" type="radio" default="0" label="Read Only" description="Set yes if you wanna make this field readonly">
+			<option value="0" name='No'>No</option>
+			<option value="1" name='Yes'>Yes</option>
+		</param>
+		<param name="maxrange" type="text" default="150" label="Maximum Range in YYYY-MM-DD or numeric age" description="Set the maximum date or age" />
+		<param name="minrange" type="text" default="1" label="Minimum Range in YYYY-MM-DD or numeric age" description="Set the minimum date" />
+		<param name="date_format" type="text" default="" label="Date Format.(PHP - E.g. Y-m-d -> Year-Month-Day)" description="Set date format eg (Y m d -> Year Month Day)" />
+		<param name="style" type="text" default="" label="Style Atrribute" description="Use the css code to style the field" />
+	</params>
+</config>

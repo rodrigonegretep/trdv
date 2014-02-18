@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>QR Codes (Local)</name>
+	<author>Dave</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2012 - Dave Airey. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>malacusp@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<version>2.5.2</version>
+	<description>MOD QRCODES LOCAL Version 2.5.2 - Create QR codes for your webpages locally (in the cache folder). Most of the other modules use external sites to create the qrcodes and then call them using an &lt;img&gt; tag that references the remote site. If that site goes down or changes then you are allowing anyone to put pictures on to your site whether this is adverts or, worst case scenario, pornographic pictures.
+	This module creates all the QR codes locally on your server and places them in the cache folder for re-use. This makes deleting and purging of the images easy using the standard cache tools.</description>
+	<files>
+		<filename module="mod_qrcodes_local">mod_qrcodes_local.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_qrcodes_local.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_BANNERS" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="header_text" type="textarea" rows="3" cols="40" default="Send this page via your Mobile Device using the QR code here." label="Header Text" description="PARAMHEADERTEXT" />
+				<field name="footer_text" type="textarea" rows="3" cols="40" default="" label="Footer Text" description="PARAMFOOTERTEXT" />
+				<field name="exclusion_list" type="textarea" rows="3" cols="40" default="admin, cart, checkout, account, user, 404" label="Page Exclusion List" description="PARAMEXCLUSIONLIST" />
+				<field name="include_secure" type="radio" default="No" label="Include All HTTPS URL's" description="PARAMINCLUDESECURE">
+					<option value="No">No</option>
+					<option value="Yes">Yes</option>
+				</field>
+				<field name="secure_exception_list" type="textarea" rows="3" cols="40" default="contact" label="Secure (HTTPS) Exception List" description="PARAMSECUREEXCEPTIONLIST" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="fixed_text" type="text" size="100" default="" label="Fixed Text for this module &lt;br /&gt;(Leave blank to use page URL)" description="PARAMFIXEDTEXT" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="header_style" type="text" size="100" default="font-weight:bold;text-align:center;" label="Header Text Style Override &lt;br /&gt;(Standard CSS inline style notation)" description="PARAMHEADERSTYLE" />
+				<field name="pic_align" type="radio" default="left" label="QR Code Image Alignment" description="PARAMPICALIGN">
+					<option value="left">Left</option>
+					<option value="center">PARAMCENTER</option>
+					<option value="right">Right</option>
+				</field>
+				<field name="footer_style" type="text" size="100" default="" label="Footer Text Style Override &lt;br /&gt;(Standard CSS inline style notation)" description="PARAMFOOTERSTYLE" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="ignore_all" type="radio" default="No" label="Ignore All URL Parameters" description="PARAMIGNOREALL">
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</field>
+				<field name="ignore_some" type="textarea" rows="3" cols="40" default="" label="Ignore Some Parameters&lt;br /&gt;(Above must be set to No)" description="PARAMIGNORESOME" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="folder_permissions" type="text" default="755" label="QR Code Cache Folder Permissions" description="PARAMFOLDERPERM"  />
+				<field name="file_permissions" type="text" default="644" label="QR Code Cache File Permissions" description="PARAMFILEPERM"  />
+				<field name="expires_time" type="text" default="10080" label="QR Code Expires Time" description="PARAMEXPIRESTIME"  />
+				<field name="expires_period" type="radio" default="minutes" label="QR Code Expires Time Period" description="PARAMEXPIRESPERIOD">
+					<option value="minutes">Minutes</option>
+					<option value="hours">Hours</option>
+					<option value="days">Days</option>
+					<option value="weeks">Weeks</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>ETR - System</name>
+	<author>Rodrigo Negrete</author>
+	<creationDate>January 2014</creationDate>
+	<copyright>Copyright 2014 - Ideamovil</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>rodrigo@ideamovil.cl</authorEmail>
+	<authorUrl>http://www.ideamovil.cl</authorUrl>
+	<version>1.0.2</version>
+ 
+	<description>PLG_ETRSYSTEM_DESCRIPTION</description>
+	<languages>
+	    <language tag="es-ES">es-ES.plg_system_etrsystem.ini</language>
+		<language tag="es-ES">es-ES.plg_system_etrsystem.sys.ini</language>
+	</languages>
+	<files>
+		<file plugin="etrsystem">etrsystem.php</file>
+	</files>
+</extension>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="user" method="upgrade">
+    <name>ETR - User</name>
+    <author>Rodrigo Negrete</author>
+    <creationDate>Jan 2014</creationDate>
+    <copyright>Copyright 2014 - Ideamovil</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>rodrigo@ideamovil.cl</authorEmail>
+    <authorUrl>http://www.ideamovil.cl</authorUrl>
+    <version>1.0.1</version>
+ 
+    <description>PLG_ETRUSER_DESCRIPTION</description>
+    <files>
+        <filename plugin="etruser">etruser.php</filename>
+    </files>
+ 
+    <languages>
+        <language tag="es-ES">es-ES.plg_user_etruser.ini</language>
+        <language tag="es-ES">es-ES.plg_user_etruser.sys.ini</language>
+    </languages>
+ 
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field  name="activitymessage" type="text" rows="3" cols="50" default="PLG_ETRUSER_NEW_USER_REGISTERED" label="Activity message" description="Enter the message that you want to appear in the activity" />
+            </fieldset>
+        </fields>
+    </config>
+ 
+</extension>
